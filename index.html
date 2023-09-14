@@ -71,29 +71,46 @@
 
         <!-- ......form........ -->
         <div class="contact-form">
-          <form>
+          <form id="myForm">
             <div class="fields">
-              <label class="lable-name" for=""
-                >First Name <span class="required-sign">*</span>
-              </label>
-              <input class="input-field" type="text" placeholder="Name" />
+              <label class="lable-name" for="firstName"
+                >First Name <span class="required-sign">*</span></label
+              >
+              <input
+                class="input-field"
+                type="text"
+                id="firstName"
+                placeholder="Name"
+              />
+              <span class="error" id="firstNameError"></span>
             </div>
+
             <div class="fields">
-              <label class="lable-name" for=""
-                >Last Name <span class="required-sign">*</span>
-              </label>
-              <input class="input-field" type="text" placeholder="Name" />
+              <label class="lable-name" for="lastName"
+                >Last Name <span class="required-sign">*</span></label
+              >
+              <input
+                class="input-field"
+                type="text"
+                id="lastName"
+                placeholder="Name"
+              />
+              <span class="error" id="lastNameError"></span>
             </div>
+
             <div class="fields">
-              <label class="lable-name" for=""
-                >Email Address <span class="required-sign">*</span>
-              </label>
+              <label class="lable-name" for="email"
+                >Email Address <span class="required-sign">*</span></label
+              >
               <input
                 class="input-field"
                 type="email"
+                id="email"
                 placeholder="anishazahan13@gmailcom"
               />
+              <span class="error" id="emailError"></span>
             </div>
+
             <div class="fields">
               <label class="lable-name" for="">Confirm Email </label>
               <input
@@ -105,19 +122,42 @@
 
             <div class="check-field">
               <div class="check-field-1">
-                <input class="checkbox-field" type="checkbox" name="" id="" />
+                <input
+                  class="checkbox-field"
+                  type="checkbox"
+                  name="mailingList"
+                  id="mailingListCheckbox"
+                />
                 <p class="checkbox-content">
                   By checking this box, you agree to be added to our mailing
                   list. You can opt out at any time.
                 </p>
               </div>
+
               <div class="check-field-1">
-                <input class="checkbox-field" type="checkbox" name="" id="" />
+                <input
+                  class="checkbox-field"
+                  type="checkbox"
+                  name="terms"
+                  id="termsCheckbox"
+                />
                 <p class="checkbox-content">
                   By Checking this box, you agree to our
                   <a href="">Terms of Service</a> and
                   <a href="">Privacy Policy.</a>
                 </p>
+              </div>
+
+              <div
+                id="checkboxError"
+                class="checkbox-error"
+                style="display: none"
+              >
+                <img src="../assets/img/.png" alt="" />
+                <span
+                  class="checkbox-error-meaasege"
+                  id="checkboxErrorMsg"
+                ></span>
               </div>
             </div>
 
@@ -126,6 +166,8 @@
             </div>
           </form>
         </div>
+
+        <script src="./js/form-validation.js"></script>
       </section>
     </section>
   </body>

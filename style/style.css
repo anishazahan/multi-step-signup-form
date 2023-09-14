@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
   
-    margin-top: 5%;
+    margin: 5% auto;
     gap: 28px;
 }
 
@@ -204,5 +204,28 @@ border: none;
     box-shadow: 3px 3px 20px 0px rgba(18, 107, 173, 0.12);
 }
 
+
+
+/* ........form error handeling........... */
+.error{
+    color: #B91C1C;
+}
+
+.checkbox-error{
+    display: flex;
+    align-items: center;
+   gap: 5px;
+   
+}
+.checkbox-error-meaasege{
+    color: #DFA129;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: -5px;
+
+}
 
 
