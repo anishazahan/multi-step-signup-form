@@ -1,0 +1,32 @@
+
+
+
+@media screen and (min-width: 1500px) {
+    .main-section {
+        
+        /* flex-direction: row; */
+    }
+    .left-content{
+        width: 667px;
+        height: 1180px;
+        
+    }
+    .right-content{
+        width: 715px;
+        height: 1180px;
+        
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .main-section {
+        
+        flex-direction: column;
+        margin: 5%;
+    }
+    .left-heading{
+   
+        font-size: 30px;
+        
+        }
+}
